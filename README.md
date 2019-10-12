@@ -1,24 +1,26 @@
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.twitter.twittertext/twitter-text.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.twitter.twittertext%22%20AND%20a%3A%22twitter-text%22)
+[![](https://jitpack.io/v/uakihir0/twitter-text.svg)](https://jitpack.io/#uakihir0/twitter-text)
 
 # twitter-text
 
-This is the Java implementation of the twitter-text parsing library. The library has methods and classes to parse Tweets and calculate length, validity, parse @mentions, #hashtags, URLs, and more.
+This is the Java implementation of the twitter-text parsing library. The library has methods and classes to parse Tweets and calculate length, validity, parse @mentions, #hashtags, URLs, and more. It's modified for compiling with j2objc. 
 
 ## Getting Started
 
 The latest artifacts are published to maven central.
 
-Bringing twitter-text-java into your project should be as simple as adding the following to your pom.xml:
+Bringing twitter-text-java into your project should be as simple as adding the following to your build.gradle:
 
 ```xml
-  <dependencies>
-    <dependency>
-      <groupId>com.twitter.twittertext</groupId>
-      <artifactId>twitter-text</artifactId>
-      <version>3.0.0</version> <!-- or whatever the latest version is -->
-    </dependency>
-  </dependencies>
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+dependencies {
+	implementation 'com.github.uakihir0:twitter-text:${version}'
+}
 ```
 
 ## Building
