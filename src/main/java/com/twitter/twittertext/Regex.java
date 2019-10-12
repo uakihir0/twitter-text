@@ -7,7 +7,6 @@ package com.twitter.twittertext;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.regex.Pattern;
-import javax.annotation.Nonnull;
 
 public class Regex {
 
@@ -333,7 +332,7 @@ public class Regex {
     }
   }
 
-  private static String join(@Nonnull Collection<?> col) {
+  private static String join(Collection<?> col) {
     final StringBuilder sb = new StringBuilder();
     final Iterator<?> iter = col.iterator();
     if (iter.hasNext()) {

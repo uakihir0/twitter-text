@@ -2,6 +2,9 @@
 /target/
 /out/
 /dist/
+/build/
+/.idea/
+/.gradle/
 /twitter-text.iml
 /Twitter-text-java.iml
 /twitter-text-java.ipr
